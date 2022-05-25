@@ -65,7 +65,7 @@ function limp() {
   document.getElementById("a").value = "";
   document.getElementById("b").value = "";
   document.getElementById("c").value = "";
-  document.getElementById("hsol").innerText = "Delta: \n Raiz 1: \n Raiz 2:";
+  document.getElementById("hsol").innerText = "Delta: \n R' : \n R'' :";
   document.getElementById("dnega").style.display = "none";
   document.getElementById("dzero").style.display = "none";
   document.getElementById("dposi").style.display = "none";
