@@ -320,11 +320,11 @@ input {
 
 @media (min-width: 768px) and (max-width: 969px) {
   .menu {
-    width: 600px;
+    width: 700px;
   }
 
   .calculo-eq {
-    width: 600px;
+    width: 690px;
   }
 
   .calculo-eq h1 {
@@ -333,10 +333,6 @@ input {
 
   .expre {
     width: 75%;
-  }
-
-  input {
-    size: 3;
   }
 
   .areadesolu {
@@ -367,6 +363,10 @@ input {
     width: 150%;
   }
 
+  .expre {
+    width: 60%;
+  }
+
   .resposta h1 {
     margin-top: 40px;
   }
@@ -393,11 +393,11 @@ input {
   }
 
   .entradas {
-    width: 150%;
+    width: 160%;
   }
 
   .expre {
-    width: 70%;
+    width: 75%;
     margin-bottom: 20px;
   }
 
