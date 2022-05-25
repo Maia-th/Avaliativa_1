@@ -36,14 +36,14 @@ function calc_raiz() {
   let d = Math.pow(b, 2) - 4 * a * c;
 
   if (d < 0) {
-    document.getElementById("hsol").innerText = "Delta Negativo";
+    document.getElementById("hsol").innerText = "Delta = " + d;
     document.getElementById("dnega").style.display = "flex";
     document.getElementById("dzero").style.display = "none";
     document.getElementById("dposi").style.display = "none";
   } else if (d == 0) {
     raiz1 = -b / (2 * a);
     raiz1 = Math.round(raiz1 * 100) / 100;
-    document.getElementById("hsol").innerText = "Delta = 0 \n Raiz 1: " + raiz1;
+    document.getElementById("hsol").innerText = "Delta = 0 \n R = " + raiz1;
     document.getElementById("dnega").style.display = "none";
     document.getElementById("dzero").style.display = "flex";
     document.getElementById("dposi").style.display = "none";
@@ -54,7 +54,7 @@ function calc_raiz() {
     raiz1 = Math.round(raiz1 * 100) / 100;
     raiz2 = Math.round(raiz2 * 100) / 100;
     document.getElementById("hsol").innerText =
-      "Delta = " + d + "\n Raiz 1: " + raiz1 + "\n Raiz 2: " + raiz2;
+      "Delta = " + d + "\n R' = " + raiz1 + "\n R'' = " + raiz2;
     document.getElementById("dnega").style.display = "none";
     document.getElementById("dzero").style.display = "none";
     document.getElementById("dposi").style.display = "flex";
