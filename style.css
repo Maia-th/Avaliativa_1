@@ -335,6 +335,10 @@ input {
     width: 75%;
   }
 
+  input {
+    size: 3;
+  }
+
   .areadesolu {
     width: 200px;
   }
