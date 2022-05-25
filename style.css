@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans&display=swap");
+
+* {
+  margin: 0;
+  border: 0;
+  font-family: "Open Sans";
+  font-weight: 400;
+  color: #333333;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(img/subtle-prism.svg);
+}
+
+aside {
+  display: none;
+}
+
+#dnega {
+  display: none;
+  background-color: brown;
+  color: #f7f7f7;
+  font-weight: 700;
+}
+
+#dzero {
+  display: none;
+  background-color: gold;
+  color: #f7f7f7;
+  font-weight: 700;
+}
+
+#dposi {
+  display: none;
+  background-color: green;
+  color: #f7f7f7;
+  font-weight: 700;
+}
+
+/*Menu Mobile*/
+
+.menu-mobile {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+}
+
+.menu-mobile #menu-icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+#menu-ico {
+  position: fixed;
+  top: 5px;
+  right: 5px;
+}
+
+.menu-mobile #menu-area {
+  width: 0vw;
+  height: 100vh;
+  background: orange;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transition: all ease 1s;
+}
+
+.m-open ul {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+#menu-area li a {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  padding: 20px;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/*Menu*/
+
+.menu {
+  width: 860px;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.meunu nav ul,
+.menu nav li {
+  list-style: none;
+}
+
+.menu nav ul {
+  display: flex;
+}
+
+.menu nav ul li a {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 18px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.menu nav ul li a:hover {
+  color: #ffffff;
+  background-color: darkorange;
+  transition: all ease 0.8s;
+}
+
+/*Seção calculo-eq*/
+
+.calculo-eq {
+  width: 960px;
+  height: 332px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: auto;
+}
+
+.entradas {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resposta {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resposta h1,
+.entradas h1 {
+  margin-top: 20px;
+  margin-bottom: 27px;
+  font-weight: 500;
+  color: darkorange;
+  border-style: outset;
+  border-width: 2px;
+  background-color: azure;
+  border-color: white;
+}
+
+.expre {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+input {
+  text-align: center;
+}
+
+.bt-calc,
+.bt-limp {
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 700;
+  background-color: darkorange;
+  color: #ffffff;
+  padding: 10px 10px 10px 10px;
+  border-radius: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+}
+
+.bt-limp {
+  background-color: darkblue;
+}
+
+.bt-calc:hover,
+.bt-limp:hover {
+  background-color: orange;
+  transition: 0.8s;
+}
+
+.bt-limp:hover {
+  background-color: blue;
+}
+
+.solu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  height: 240px;
+  border-radius: 10px;
+}
+
+.areadesolu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #ececf1;
+  width: 260px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+/*Seção teoria*/
+
+.teoria {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.teor {
+  width: 500px;
+  background-color: #ececf1;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+}
+
+.teoria .teor h1 {
+  margin: 20px 0px 20px 0px;
+}
+
+.teor h1 {
+  color: darkorange;
+}
+
+.teoria .teor h3 {
+  margin: 20px 0px 20px 0px;
+}
+
+.teoria .teor p {
+  margin: 20px 0px 20px 0px;
+}
+
+/*Seção Sobre*/
+
+.sobre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7f7;
+  margin-top: 40px;
+}
+
+.sbcont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.sbcont p {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #707070;
+}
+
+.sbcont img {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 300px;
+  height: auto;
+}
+
+/*Rodapé*/
+
+.rodape {
+  background-color: #212529;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 10px 20px 10px;
+  text-align: center;
+}
+
+.rod p {
+  margin-top: 10px;
+  color: #f4f6fd;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+/*Media*/
+
+@media (min-width: 768px) and (max-width: 969px) {
+  .menu {
+    width: 600px;
+  }
+
+  .calculo-eq {
+    width: 600px;
+  }
+
+  .calculo-eq h1 {
+    text-align: center;
+  }
+
+  .expre {
+    width: 75%;
+  }
+
+  .areadesolu {
+    width: 200px;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 767px) {
+  aside {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .calculo-eq {
+    width: 280px;
+    height: 600px;
+    flex-direction: column;
+  }
+
+  .calculo-eq h1 {
+    margin-top: 40px;
+  }
+
+  .entradas {
+    width: 150%;
+  }
+
+  .resposta h1 {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 420px) {
+  aside {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .calculo-eq {
+    width: 200px;
+    height: 500px;
+    flex-direction: column;
+  }
+
+  .calculo-eq h1 {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .entradas {
+    width: 150%;
+  }
+
+  .expre {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+
+  .resposta h1 {
+    margin-top: 40px;
+  }
+}

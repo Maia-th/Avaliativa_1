@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EQ. De 2° Grau</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="icon" href="img/icone.ico" />
+  </head>
+  <body>
+    <aside>
+      <div class="menu-mobile">
+        <div id="menu-area" class="m-open">
+          <ul>
+            <li>
+              <img src="img/icone.ico" width="70px" height="70px" alt="" />
+            </li>
+            <li><a href="#calculo" onclick="menuToggle()">Cálculo</a></li>
+            <li><a href="#teoria" onclick="menuToggle()">Teoria</a></li>
+            <li><a href="#sobre" onclick="menuToggle()">Sobre</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="menu-ico" onclick="menuToggle()">
+        <img src="img/menu.png" width="36" />
+      </div>
+    </aside>
+
+    <header class="menu">
+      <div class="logo">
+        <img src="img/icone.ico" width="70px" height="70px" alt="" />
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#calculo">Cálculo</a></li>
+          <li><a href="#teoria">Teoria</a></li>
+          <li><a href="#sobre">Sobre essa Página</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="calculo-eq">
+      <div class="entradas">
+        <a name="calculo"></a>
+        <h1>Resolva a sua equação de 2° Grau:</h1>
+
+        <div class="expre">
+          <input
+            type="text"
+            id="a"
+            name="termo1"
+            onkeypress="onlynumber()"
+            placeholder="A"
+            size="1"
+          />
+          X² +
+          <input
+            type="text"
+            id="b"
+            name="termo1"
+            onkeypress="onlynumber()"
+            placeholder="B"
+            size="1"
+          />
+          X +
+          <input
+            type="text"
+            id="c"
+            name="termo1"
+            onkeypress="onlynumber()"
+            placeholder="C"
+            size="1"
+          />
+          = 0
+        </div>
+
+        <div class="bts">
+          <button id="calc" class="bt-calc" onclick="calc_raiz ()">
+            Calcular
+          </button>
+
+          <button id="limp" class="bt-limp" onclick="limp()">Limpar</button>
+        </div>
+      </div>
+
+      <div class="resposta">
+        <h1>SOLUÇÃO:</h1>
+
+        <div class="solu">
+          <h2 class="areadesolu" id="hsol">
+            Delta: <br />
+            Raiz 1: <br />
+            Raiz 2:
+          </h2>
+          <p id="dnega">A equação não possui raiz</p>
+          <p id="dzero">A equação possui apenas uma raiz</p>
+          <p id="dposi">A equação possui as duas raizes</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="teoria">
+      <div class="teor">
+        <a name="teoria"></a>
+        <h1>Equação De 2° Grau</h1>
+        <p>
+          Uma equação de 2° grau é toda a equação na forma Ax² + Bx + C = 0.<br />
+          Com a, b e c sendo números reais e a ≠ 0.
+        </p>
+        <h3>Como Calcular ?</h3>
+        <p>Para encontrar a solução basta seguir a fórmula de Bhaskara.</p>
+        <h3>Passos</h3>
+        <p>Primeiro, devemos calcular o valor do ∆:</p>
+        <ul>
+          <li>∆ = b² - 4.a.c</li>
+        </ul>
+        <p>Se:</p>
+
+        <ul>
+          <li>∆ < 0: A equação não terá raiz.</li>
+          <li>∆ = 0: A equação terá uma raiz.</li>
+          <li>∆ > 0: A equação terá duas raizes.</li>
+        </ul>
+        <p>Para calcular as raízes, usamos:</p>
+        <center><img src="img/eq.png" alt="formuladasraizes" /></center>
+      </div>
+    </section>
+
+    <section class="sobre">
+      <div class="sbcont">
+        <a name="sobre"></a>
+        <p>
+          Essa página foi criada com o objetivo de servir como atividade
+          avaliativa da disciplina de Desenvolvimento De Sistemas Web.
+        </p>
+        <p>Foram usadas as seguintes habilidades:</p>
+        <img src="img/habilidades.png" alt="html css js" />
+      </div>
+    </section>
+
+    <footer class="rodape">
+      <div class="rod">
+        <p>
+          Aluno: Thiago Oliveira Maia <br />
+          Professor: Eduardo Ribeiro Felipe
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
