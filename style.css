@@ -101,13 +101,9 @@ aside {
   padding-right: 10px;
 }
 
-.meunu nav ul,
-.menu nav li {
-  list-style: none;
-}
-
-.menu nav ul {
+.menu nav ul{
   display: flex;
+  list-style: none;
 }
 
 .menu nav ul li a {
