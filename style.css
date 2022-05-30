@@ -263,6 +263,10 @@ input {
   margin: 20px 0px 20px 0px;
 }
 
+.form {
+  text-align: center;
+}
+
 /*Seção Sobre*/
 
 .sobre {
